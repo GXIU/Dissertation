@@ -1,0 +1,16 @@
+\section{弱选择下的空间演化博弈}
+相关文献链接：\href{https://www.pnas.org/content/114/23/6046}{Spatial evolutionary games with weak selection, 2017, PNAS.}
+
+\subsection{摘要翻译}
+
+进来，一套严格的数学理论来解释弱自然选择机制之下的空间博弈理论。所谓弱自然选择，指的是各种策略的payoff差别不大。分析的关键在于，如果合理地重标度时间和空间，那么空间模型就会收敛于某个偏微分方程（PDE）的解。这种方法可以用来分析$2\times 2$的博弈，但还有一些$3\times 3$的博弈的PDE极限是未知的。本文中，我们给出了一大类$3\times3$的博弈的确定行为，并通过模拟验证了规律。总之，空间的效应等价于改变payoff矩阵，并且只要这个过程确定，空间博弈的行为可以由replicator方程来预测（We say predicted here because in some cases the behavior of the spa- tial game is different from that of the replicator equation for the modified game.）。举个例子，石头剪刀布博弈有一个复制方程，可以旋转出边界。而空间使这个系统稳定了下来，并导出了均衡。
+
+关键词：癌症建模、公共资源博弈、骨癌、石头剪子布。
+
+演化博弈的一般假设为：人口是同质的混合，也就是说，每个人的复制矩阵是相同的。详见（Hofbauer和Sigmund）的书。如果$u_i$是选择策略$i$的人的频率，那么我们有\begin{align}
+    & \frac{d u_i}{dt} = u_i(F_i-\bar{F}),\\
+    \text{where } & F_i = \sum_{j} G_{i,j} u_j
+\end{align}
+其中$F_i$是每种策略的效用，$G_{ij}$是二人博弈时，两人分别选择$i,j$策略时，第一个人得到的payoff；$\bar{F}=\sum_i u_i F_i$是平均效用。
+
+这种同质混合假设对于生态学中的演化博弈或者肿瘤的形成来说，并不适用。所以我们需要理解空间结构是如何影响
