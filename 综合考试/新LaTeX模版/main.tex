@@ -1,0 +1,87 @@
+\documentclass[UTF8]{ctexbook}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{autobreak}
+\usepackage{titlesec}   %设置页眉页脚的宏包
+\usepackage{geometry}
+\usepackage{fancyhdr}
+
+\newcommand{\keywords}{\large \textbf{关键词}：生成模型, 复杂系统, 统计物理, 随机过程}
+\newcommand{\ekeywords}{\large \textbf{Keywords}: Generation models, complex network, statistical physics, stochastic process}
+
+\renewcommand{\chaptermark}[1]{\markboth{\small 第\,\thechapter\,章\q? #1}{}}
+\fancypagestyle{plain}{
+	\fancyhf{}\renewcommand*{\headrulewidth}{0.75bp}
+	\fancyfoot[C]{\thepage}
+		\fancyhead[CE]{北京大学博士生学位论文}
+		\fancyhead[CO]{\leftmark}
+}
+\pagestyle{plain}
+
+\title{综合考试报告}
+\author{修格致}
+\date{\today}
+
+\begin{document}
+\thispagestyle{plain}
+\makeatletter
+    \begin{titlepage}
+        \begin{center}
+            \includegraphics[width=0.6\linewidth]{Figs/Logo.png}\\[4ex]
+            {\Huge \bfseries \hspace{3ex} \@title }\\[10ex]
+        {\huge \centering
+        \begin{tabular}{cc}
+                \makebox[5em]{\textbf{题目：}}        & \underline{\makebox[10em]{\textbf{城市标度律的生成模型}}}
+        \end{tabular}
+        } \\[20ex]
+        {\Large \begin{center}
+            \begin{tabular}{cc}
+                \makebox[5em][s]{\textbf{姓名：}}        & \underline{\makebox[12em]{\emph{修格致}}}\\[1ex]
+                \makebox[5em][s]{\textbf{学号：}}& \underline{\makebox[12em]{1801110566}}\\[1ex]
+                \makebox[5em][s]{\textbf{院系：}}      &\underline{\makebox[12em]{\emph{地球与空间科学学院}}} \\[1ex]
+                \makebox[5em][s]{\textbf{专业：}}      &\underline{\makebox[12em]{\emph{地图学与地理信息系统}}}\hfill \\[1ex]
+                \makebox[5em][s]{\textbf{研究方向：}}      &\underline{\makebox[12em]{\emph{城市复杂系统}}} \\[1ex]
+                \makebox[5em][s]{\textbf{指导教师：}}
+                &\underline{\makebox[12em]{\emph{刘瑜 \ 教授}}}
+            \end{tabular}
+            \vfill
+        \end{center}
+        }
+        {\Large\today}
+    \end{center}
+    \end{titlepage}
+\makeatother
+\thispagestyle{empty}
+\newpage
+
+%Add content for page two here (useful for two-sided printing)
+\thispagestyle{empty}
+\newpage
+\chapter*{摘要}
+\input{Chapters/abstract}
+\setcounter{page}{1}
+\pagenumbering{Roman}
+
+
+{\vfill \keywords}
+
+\chapter*{Abstract}
+
+{\vfill \ekeywords}
+\tableofcontents
+
+\include{Chapters/chapter1}
+\include{Chapters/chapter2}
+\include{Chapters/chapter3}
+\include{Chapters/chapter4}
+% 结论。
+\include{Chapters/chapter5}
+
+
+
+\bibliographystyle{unsrt}
+\bibliography{ref}
+\end{document}
