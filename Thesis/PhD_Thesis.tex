@@ -1,4 +1,4 @@
-\documentclass[letterpaper]{book}
+\documentclass[b5paper]{book}
 \usepackage{amsmath}
 % \usepackage{ctex}
 \usepackage{enumerate}
@@ -8,8 +8,9 @@
 \usepackage{inputenc}
 \usepackage{autobreak}
 \usepackage{titlesec}   %设置页眉页脚的宏包
-\usepackage[inner = 4cm, outer = 3cm]{geometry}
+% \usepackage[inner = 5cm, outer = 3cm]{geometry}
 \usepackage{fancyhdr} 
+\renewcommand{\familydefault}{\sfdefault}
 
 \pagestyle{plain}
 
@@ -30,6 +31,7 @@
 \tableofcontents
 \input{Chapters/abstract_introduction}
 \input{Chapters/Spatial_Yule}
+\input{Chapters/UHI_and_SLUM}
 \input{Chapters/Social_Segregation}
 \input{Chapters/Surplus_in_urban_networks}
 \input{Chapters/Allee}
