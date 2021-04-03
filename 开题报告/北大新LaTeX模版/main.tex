@@ -1,4 +1,4 @@
-\documentclass[UTF8]{ctexbook}
+\documentclass[UTF8,a4paper]{ctexbook}
 \usepackage{amsmath}
 \usepackage{enumerate}
 \usepackage{booktabs}
@@ -13,16 +13,17 @@
 \newcommand{\ekeywords}{\large \textbf{Keywords}: World Cup, Lancet, Blues}
 
 \renewcommand{\chaptermark}[1]{\markboth{\small 第\,\thechapter\,章\q? #1}{}}
+
 \fancypagestyle{plain}{
 	\fancyhf{}\renewcommand*{\headrulewidth}{0.75bp}
 	\fancyfoot[C]{\thepage}
-		\fancyhead[CE]{北京大学博士生学位论文}
+		\fancyhead[CE]{北京大学博士研究生开题报告}
 		\fancyhead[CO]{\leftmark}
 }
 \pagestyle{plain}
 
-\title{博士生学位论文}
-\author{My name}
+\title{博士研究生开题报告}
+\author{修格致}
 \date{\today}
 
 \begin{document}
@@ -34,18 +35,18 @@
             {\Huge \bfseries \hspace{3ex} \@title }\\[10ex]
         {\huge \centering
         \begin{tabular}{cc}
-                \makebox[5em]{\textbf{题目：}}        & \underline{\makebox[10em]{\textbf{演化图上的流行病模型}}}
+                \makebox[5em]{\textbf{题目：}}        & \underline{\makebox[10em]{\textbf{介观尺度的城市交互问题}}}
         \end{tabular}
         } \\[20ex]
         {\Large \begin{center}
             \begin{tabular}{cc}
-                \makebox[5em][s]{\textbf{姓名：}}        & \underline{\makebox[10em]{\emph{\author}}}\\[1ex]
-                \makebox[5em][s]{\textbf{学号：}}& \underline{\makebox[10em]{180121xxxxx}}\\[1ex]
-                \makebox[5em][s]{\textbf{院系：}}      &\underline{\makebox[10em]{\emph{数学科学学院}}} \\[1ex]
-                \makebox[5em][s]{\textbf{专业：}}      &\underline{\makebox[10em]{\emph{养猫学}}}\hfill \\[1ex]
-                \makebox[5em][s]{\textbf{研究方向：}}      &\underline{\makebox[10em]{\emph{虐狗论}}} \\[1ex]
+                \makebox[5em][s]{\textbf{姓名：}}        & \underline{\makebox[10em]{\emph{修格致}}}\\[1ex]
+                \makebox[5em][s]{\textbf{学号：}}& \underline{\makebox[10em]{1801110566}}\\[1ex]
+                \makebox[5em][s]{\textbf{院系：}}      &\underline{\makebox[10em]{\emph{地球与空间科学学院}}} \\[1ex]
+                \makebox[5em][s]{\textbf{专业：}}      &\underline{\makebox[10em]{\emph{地图学与地理信息系统}}}\hfill \\[1ex]
+                \makebox[5em][s]{\textbf{研究方向：}}      &\underline{\makebox[10em]{\emph{数字地球与智慧城市}}} \\[1ex]
                 \makebox[5em][s]{\textbf{指导教师：}}
-                &\underline{\makebox[10em]{\emph{薛定谔}}}
+                &\underline{\makebox[10em]{\emph{刘瑜\ 教授}}}
             \end{tabular}
             \vfill
         \end{center}
@@ -71,13 +72,17 @@
 
 {\vfill \ekeywords}
 \tableofcontents
-\chapter{序言}
-\setcounter{page}{1}
-\pagenumbering{arabic}
+
+\input{Chaps/1.选题背景.tex}
+\input{Chaps/2.研究现状与问题归纳.tex}
+\input{Chaps/3.研究内容.tex}
 
 
-\section{研究背景及界定}
-新模版~\cite{nanda2017spatial}.
-\bibliographystyle{unsrt}
+
+
+
+
+
+\bibliographystyle{apalike}
 \bibliography{ref.bib}
 \end{document}
