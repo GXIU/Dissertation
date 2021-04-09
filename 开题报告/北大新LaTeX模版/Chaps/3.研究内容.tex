@@ -52,7 +52,40 @@ Diffusion map是一种流形学习方法。其出发点在于：很多多元数�
     \label{fig:allee1}
 \end{figure}
 
+\begin{figure}
+    \centering
+    \includegraphics[width = 0.9\linewidth]{Figs/Figure2.jpg}
+    \caption{\textbf{城市稳定性的框架图}。\textbf{a-b}, 人类系统（城市）面对外部冲击时的反应。冲击从一些元人口渗透到城市中，并通过经常性的流动网络和地方互动传播。\textbf{c}, 城市的抽象流动矩阵：在冲击期间，社区内部的访问更为频繁，对应$\theta > 1$. \textbf{d}, 系统的稳定性与其抵抗冲击转为爆发的能力之间的负向关系。 \textbf{e}, 华盛顿特区个体流动性的半径分布。最冷的颜色代表2020年的第一周，而最暖的颜色代表最新的。考虑到COVID-19的冲击，跨社区个体流动性的规模下降，恢复模式不变。\textbf{f}，2020年1月至6月1日美国25个城市人口普查区间和人口普查区内流动意向的周比值。趋势代表了城市地区个别的运动半径，在2月中旬达到顶点，即左边的虚线，直到3月下旬才下降，即中间的虚线。这一结果支持了局部相互作用的作用在检疫期增加的说法。}
+    \label{fig:allee1}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 0.9\linewidth]{Figs/Figure3.png}
+    \caption{\textbf{城市稳定性的框架图}。\textbf{a-b}, 人类系统（城市）面对外部冲击时的反应。冲击从一些元人口渗透到城市中，并通过经常性的流动网络和地方互动传播。\textbf{c}, 城市的抽象流动矩阵：在冲击期间，社区内部的访问更为频繁，对应$\theta > 1$. \textbf{d}, 系统的稳定性与其抵抗冲击转为爆发的能力之间的负向关系。 \textbf{e}, 华盛顿特区个体流动性的半径分布。最冷的颜色代表2020年的第一周，而最暖的颜色代表最新的。考虑到COVID-19的冲击，跨社区个体流动性的规模下降，恢复模式不变。\textbf{f}，2020年1月至6月1日美国25个城市人口普查区间和人口普查区内流动意向的周比值。趋势代表了城市地区个别的运动半径，在2月中旬达到顶点，即左边的虚线，直到3月下旬才下降，即中间的虚线。这一结果支持了局部相互作用的作用在检疫期增加的说法。}
+    \label{fig:allee1}
+\end{figure}
+
 \subsection{从众心理驱动下的介观模式形成问题}
+
+城市中的多种传播过程背后都有着同样的数学机制\cite{gao2019effects, ribeiro2020city}。比如流行病、谣言、方言、城市功能分化、社区形成等。这一节中，我们以流行病传播为例，讨论传播过程如何在城市的介观层次上固定下来。
+
+标准的疾病模型将流行病的复杂性降低为简单的过程，提供了有用的见解。把复杂的空间交互行为还原成个体对之间的交互的处理，可以概括为质量作用近似（mass-action approximation）上\cite{mollison1995epidemic}。这个假设考虑的是一个随机混合的人口，忽略了家庭结构、社会集会和不同个体的不同行为。因此，质量作用模型受到严重限制，因为它们只关注每个病例引起的平均感染数量，即基本传染数$R_0$ ，而忽略了潜在的异质性\cite{hebert2020beyond}。在依赖质量作用假设的情况下，设计有针对性的干预措施也存在概念问题。我们应该把干预措施的目标放在哪里，它们的影响应该是什么？我们通过引入高阶接触模式来解决这些问题。
+
+流行病等传播过程进行的同时，心理因素也起到了重要作用。在疫苗尚未完全普及的现在，非药物干预（non-pharmaceutical interventions, NPSs）以及人们对其的态度有着决定性的地位。很多国家的早起宣传里，戴口罩是只有患者需要做的防疫措施。这使得社会形成戴口罩的共识变得异常困难\cite{lai2020effect, van2020face, Adolph2020PandemicPT, hellewell2020feasibility, Wolf2020AwarenessAA, Cheng2020TheRO, eikenberry2020to, erku2020fear, enberg2020covid}。这种误导或认识的时空差异有时甚至来自权威机构和研究者，他们对口罩供应缺失的强调所产生的对大众会产生心理影响\cite{biancovilli2020governments,landi2020should,sugaya2020real,weill2020social}，并通过从众心理进一步传播。话语和顺应性使得社会对戴口罩难以达成共识，可能导致社会意识的分裂~\cite{holme2006nonequilibrium}。
+
+理论上，通过统计物理学和心理学对促进健康关注的集体适应行为进行了广泛的研究~\cite{castellano2009statistical, centola2007complex, centola2010spread, centola2011experimental, christakis2007spread}。最核心的问题之一是，一个失衡的系统如何快速得到有序的发展。流行病的许多全球特征，如基本繁殖数，可能起源于社会群体的异质混合，对非药物干预的接受程度不同。比如戴口罩在被证明对COVID-19等呼吸道疾病有效，但对戴口罩的误导和歧视依然存在，这使得戴口罩的社会共识极难形成，反而加剧了社会关系的异质性。
+
+
+
+在本信中，我们提出了一个异质性在不同行为群体和流行病之间传播的网络模型。我们假设个体选择戴口罩的变化是由顺应性驱动的，而流行病的传播则是通过研究良好的易感者-感染者-易感者（SIS）模型进行的。顺应性假设是合理的，因为类似健康行为的传播得到了实验验证~\cite{christakis2008collective, zhang2016support}。我们在各种接触网络上实现了这一点，并比较了分析平均场公式中的现象。在模型中，$N$代理通过联系网络中的链接连接。每个代理是否改变要么她是感染者，要么她是一个三角形中的少数人。我们研究了合成网络和现实世界的网络，它们对应于不同规模的相互作用。
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 0.7\linewidth]{Figs/masksketch.png}
+    \caption{意见与疾病共同演化模型。}
+    \label{fig:masksketch}
+\end{figure}
 
 
 

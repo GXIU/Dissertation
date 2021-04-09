@@ -47,7 +47,7 @@
                 \makebox[5em][s]{\textbf{专业：}}      &\underline{\makebox[10em]{\emph{地图学与地理信息系统}}}\hfill \\[1ex]
                 \makebox[5em][s]{\textbf{研究方向：}}      &\underline{\makebox[10em]{\emph{数字地球与智慧城市}}} \\[1ex]
                 \makebox[5em][s]{\textbf{指导教师：}}
-                &\underline{\makebox[10em]{\emph{刘瑜\ 教授}}}
+                &\underline{\makebox[10em]{\emph{刘瑜\quad 教授}}}
             \end{tabular}
             \vfill
         \end{center}
@@ -62,16 +62,16 @@
 %Add content for page two here (useful for two-sided printing)
 \thispagestyle{empty}
 \newpage
-\chapter*{摘要}
+% \chapter*{摘要}
 \setcounter{page}{1}
 \pagenumbering{Roman}
 
 
-{\vfill \keywords}
+% {\vfill \keywords}
 
-\chapter*{Abstract}
+% \chapter*{Abstract}
 
-{\vfill \ekeywords}
+% {\vfill \ekeywords}
 \tableofcontents
 
 \input{Chaps/1.选题背景.tex}
@@ -83,9 +83,10 @@
 
 
 
-
+\addcontentsline{toc}{chapter}{参考文献} %向目录中添加条目，以章的名义
 \bibliographystyle{apalike}
 \bibliography{ref.bib}
 
+\addcontentsline{toc}{chapter}{附录}
 \input{Chaps/5.附录.tex}
 \end{document}
