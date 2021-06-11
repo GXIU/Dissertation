@@ -1,0 +1,42 @@
+\documentclass[b5paper]{ctexbook}
+\usepackage{amsmath}
+% \usepackage{ctex}
+\usepackage{enumerate}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{inputenc}
+\usepackage{autobreak}
+\usepackage{titlesec}   %设置页眉页脚的宏包
+% \usepackage[inner = 5cm, outer = 3cm]{geometry}
+\usepackage{fancyhdr} 
+\renewcommand{\familydefault}{\sfdefault}
+
+\pagestyle{plain}
+
+\title{博士外论文}
+\author{修格致}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+    {\emph{To my family}}
+\end{center}
+
+\input{Chapters/Acknowledgement}
+
+\tableofcontents
+\input{Chapters/abstract_introduction}
+\input{Chapters/Spatial_Yule}
+\input{Chapters/UHI_and_SLUM}
+\input{Chapters/Social_Segregation}
+\input{Chapters/Surplus_in_urban_networks}
+\input{Chapters/Allee}
+\input{Chapters/Conclusion}
+
+\bibliographystyle{unsrt}
+\bibliography{ref.bib}
+\end{document}
