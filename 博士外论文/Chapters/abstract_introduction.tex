@@ -6,23 +6,26 @@
 
 另一个项目就是这一本薄薄的“博士外论文”，是一本十分打动我自己的idea集合。有数学中的随机矩阵理论、金融数学、理论生态学、网络科学等方面的一些涓滴意念。
 
-\chapter{Introduction}
+\chapter{金融数学与复杂系统}
 
 
-\section{Agent-based cities}
+\section{Causal modelling of cross correlations in financial markets}
 
+\textit{
+    We use random matrix theory to analyze the time lagged cross-correlation matrix $C$ of return rate of stocks for 3000 Chinese companies for the 5-year period 2016-2021. 
+}
 
+The growing interests on econophysics, a study of applying physics toolbox to the study of financial markets, have suggested the effectiveness of dynamical modelling in macroscopic market behaviors. Particularly, the study of correlations between assets reveals many aspects of systemic risks and developments of given stock portfolio. Existing studies have constructed the equal-time correlation of the return rate of assets for given pairs of companies to model the interactions between the companies, revealing the dynamics of financial systems not only are noise-driven but also coevolute. This nature of financial market is explained by the spread of market sentiment, the fluid capital, and etc., which are discrete in time and carried out by sequential behaviors of individuals. Thus, the problem is that the precise nature of assets interaction might be time-lagged.
 
+Dealing with the correlated/interaction system requires understanding of the energy levels of different market states, which is usually dealt by the random matrix theory (RMT) of real symmetric matrix with random elements. However, as the fast information spreading of current market, the fluctuations of prices is largely brought by the information of other stocks' fluctuations thus the interaction matrix of return rates is non-symmetic. Moreover, the structure of the return rates' interplay is reminiscent of community matrix studied by theoretical ecologists for the inter-species relationships of predator-prey, mutualism, and competitions, where the systems with different social structures differ greatly in the sense of global stability.
 
-\section{Urban observations}
+Here, ...
 
+We collect dataset containing a five-year period stock price time series of China's public traded data. We denote $S_i(t)$ as the price of stock $i\in\{ 1,2,\dots,N \}$ at time $t$ from 2016 to 2021. The studied time series is the return rate of adjacent prices sampled every $\Delta t = 5$ minutes,~\begin{equation}
+    r_i(t, \Delta t) = \ln S_i(t+\Delta t) / S_i(t).
+\end{equation} The measure of correlations between different stocks, however, is different from the well-established equal-time correlations. Here, we adopt an empirical way of asymmetric modelling to get the casual cross-correlation matrix $\mathbf{C}$, which has elements~\begin{equation}
+    C_{ij} = \frac{\langle G_i^{t+\Delta t} G_j^{t} \rangle - \langle G_i^{t+\Delta t}\rangle \langle G_j^{t} \rangle}{\sigma_i^{t+\Delta t}\sigma_j^t},
+\end{equation} as the influence of the fluctuations of stock $j$ on stock $i$ after a $Delta t$ time interval. Here, $\sigma_i$ is the standard deviation of return rates of $i$. The time lagged correlation we adopt here is believed to be effective of revealing the casual relationship among stocks return rate fluctuations. We compare our construction of interaction matrix with the classical results of equal-time cross-correlation matrix. Finding that...
 
+\subsection{Results}
 
-
-\section{Methodology}
-
-
-
-
-
-\section{About the Thesis}
